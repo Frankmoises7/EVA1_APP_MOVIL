@@ -20,9 +20,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="16dp"
-            android:paddingTop="32dp"
+            android:paddingTop="16dp"
             android:paddingRight="16dp"
-            android:paddingBottom="32dp">
+            android:paddingBottom="16dp">
 
             <TextView
                 android:id="@+id/dashboard_activity_tv_welcome"
@@ -66,8 +66,19 @@
                 android:id="@+id/dashboard_activity_btn_client"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16pt"
                 android:backgroundTint="@color/gray_primary"
                 android:text="registrar/editar cliente"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/dashboard_activity_btn_logOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16pt"
+                android:backgroundTint="@color/black"
+                android:text="cerrar sesion"
                 app:cornerRadius="20dp" />
 
         </LinearLayout>
