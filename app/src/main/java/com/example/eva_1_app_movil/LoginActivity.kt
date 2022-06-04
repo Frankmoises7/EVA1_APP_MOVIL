@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.example.eva_1_app_movil.controllers.AuthController
 import com.example.eva_1_app_movil.utils.TilValidator
 import com.google.android.material.textfield.TextInputLayout
 
@@ -22,8 +23,8 @@ class LoginActivity : AppCompatActivity() {
 
 
         btnLogin.setOnClickListener {
-           val email = tilEmail.editText?.text
-           val password = tilPassword.editText?.text
+           val email = tilEmail.editText?.text.toString()
+           val password = tilPassword.editText?.text.toString()
 
             val emailValid = TilValidator(tilEmail)
                 .required()
@@ -35,11 +36,11 @@ class LoginActivity : AppCompatActivity() {
                 .isValid()
 
             if (emailValid && passwordValid) {
-                val intent = Intent(this, DashboardActivity::class.java)
-                startActivity(intent)
+                val controller = AuthController(this)
+                controller.login(email, password)
                 this.finish()
             } else {
-                Toast.makeText(this, "Credenciales Invalidas", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Campos Invalidas", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -47,7 +48,6 @@ class LoginActivity : AppCompatActivity() {
         tvRecoveryPassWord.setOnClickListener {
             val intent = Intent(this, RecoveryPasswordActivity::class.java)
             startActivity(intent)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
             this.finish()
         }

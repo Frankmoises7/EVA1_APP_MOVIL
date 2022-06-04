@@ -14,7 +14,7 @@ class RegisterActivity : AppCompatActivity() {
 
         val btnRegister = findViewById<Button>(R.id.register_activity_btn_register)
         btnRegister.setOnClickListener {
-            Toast.makeText(this, "Nuevo Admin creado", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Nuevo Admin creado", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
