@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 
 class RecoveryPasswordActivity : AppCompatActivity() {
@@ -21,8 +22,8 @@ class RecoveryPasswordActivity : AppCompatActivity() {
             this.finish()
         }
 
-        val btnCancel = findViewById<Button>(R.id.recovery_password_activity_btn_cancel)
-        btnCancel.setOnClickListener {
+        val tvToLogin = findViewById<TextView>(R.id.recovery_password_activity_tv_goToLogin)
+        tvToLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP

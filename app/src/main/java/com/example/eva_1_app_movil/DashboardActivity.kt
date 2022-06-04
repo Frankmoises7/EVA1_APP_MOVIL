@@ -11,15 +11,12 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        val btnClass = findViewById<Button>(R.id.dashboard_activity_btn_class)
-        btnClass.setOnClickListener {
-            Toast.makeText(this, "Disponible en una proxima actualizacion", Toast.LENGTH_LONG).show()
+        val btnClients = findViewById<Button>(R.id.dashboard_activity_btn_clients)
+        btnClients.setOnClickListener {
+            val intent = Intent(this, ClientsActivity::class.java)
+            startActivity(intent)
         }
 
-        val btnClient = findViewById<Button>(R.id.dashboard_activity_btn_client)
-        btnClient.setOnClickListener {
-            Toast.makeText(this, "Disponible en una proxima actualizacion", Toast.LENGTH_LONG).show()
-        }
 
         val btnLogOut = findViewById<Button>(R.id.dashboard_activity_btn_logOut)
         btnLogOut.setOnClickListener {

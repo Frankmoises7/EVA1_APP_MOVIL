@@ -56,11 +56,11 @@
                 android:textStyle="bold|italic" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_activity_til_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/register_activity_til_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
@@ -74,17 +74,19 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="4pt"
                 android:text="Ej: juanito_perez@email.com"
-                android:textStyle="bold|italic"
-                tools:layout_marginBottom="8pt" />
+                android:textStyle="bold|italic" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_activity_til_password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/register_activity_til_password"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8pt"
                     android:layout_marginBottom="12pt"
                     android:hint="Password"
                     android:inputType="textPassword" />
@@ -98,14 +100,16 @@
                 android:text="registrar admin"
                 app:cornerRadius="20dp" />
 
-            <Button
-                android:id="@+id/register_activity_btn_cancel"
+            <TextView
+                android:id="@+id/register_activity_tv_goToLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8pt"
-                android:backgroundTint="@color/gray_primary"
-                android:text="cancelar"
-                app:cornerRadius="20dp" />
+                android:padding="4pt"
+                android:text="Ir al Login"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>
