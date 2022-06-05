@@ -33,7 +33,7 @@ class ClientsAdapter(ctx: Context, clients: List<Client>): BaseAdapter() {
 
         val tvClient = rowView.findViewById<TextView>(R.id.item_client_tv_title)
 
-        tvClient.text = client.title
+        tvClient.text = "${client.id} - ${client.title}"
 
         return rowView
     }

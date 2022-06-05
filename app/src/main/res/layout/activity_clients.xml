@@ -34,7 +34,17 @@
         <ListView
             android:id="@+id/clients_activity_lv_clients"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="375dp" />
+
+        <Button
+            android:id="@+id/clients_activity_btn_NewClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16pt"
+            android:backgroundTint="@color/red_primary"
+            android:text="Nuevo Cliente"
+            app:cornerRadius="20dp" />
+
 
     </LinearLayout>
 
