@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jaaneo/Documents/CIISA 2022/android/app-movil-android/EVA1_APP_MOVIL/app/src/main/res/layout/activity_clients.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/jaaneo/Documents/CIISA 2022/android/app-movil-android/EVA1_APP_MOVIL/app/src/main/res/layout/activity_dashboard.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/jaaneo/Documents/CIISA 2022/android/app-movil-android/EVA1_APP_MOVIL/app/src/main/res/layout/activity_login.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/jaaneo/Documents/CIISA 2022/android/app-movil-android/EVA1_APP_MOVIL/app/src/main/res/layout/activity_recovery_password.xml" value="0.1" />
+        <entry key="..\:/Users/jaaneo/Documents/CIISA 2022/android/app-movil-android/EVA1_APP_MOVIL/app/src/main/res/layout/activity_recovey_password.xml" value="0.33" />
+        <entry key="..\:/Users/jaaneo/Documents/CIISA 2022/android/app-movil-android/EVA1_APP_MOVIL/app/src/main/res/layout/activity_register.xml" value="0.18703703703703703" />
         <entry key="app/src/main/res/layout/activity_clients.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
