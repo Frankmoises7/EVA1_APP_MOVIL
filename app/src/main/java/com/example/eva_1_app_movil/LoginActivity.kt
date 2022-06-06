@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
                 controller.login(email, password)
                 this.finish()
             } else {
-                Toast.makeText(this, "Campos Invalidas", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
             }
         }
 

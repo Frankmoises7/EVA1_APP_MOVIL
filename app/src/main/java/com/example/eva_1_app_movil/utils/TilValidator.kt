@@ -32,7 +32,7 @@ class TilValidator constructor(private val til: TextInputLayout){
     fun email(): TilValidator {
         if (mustValidate()) {
             val invalidField = !Patterns.EMAIL_ADDRESS.matcher(this.value).matches()
-            this.setError(invalidField, "El formato del Email es invalido")
+            this.setError(invalidField, "El formato del email es inválido")
         }
         return this
     }

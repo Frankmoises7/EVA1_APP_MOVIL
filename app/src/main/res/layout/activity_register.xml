@@ -36,10 +36,10 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/register_activity_til_userName">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/register_activity_til_userName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nombre de usuario"
